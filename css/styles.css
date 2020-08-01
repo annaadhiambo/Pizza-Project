@@ -1,0 +1,16 @@
+#back-img{
+    background-image:  url(../images/pizza4.jpg);
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 20%;
+    
+}
+.mouse{
+    padding-top: 10%;
+}
+.text-center{
+    line-height: 5vh;
+}
