@@ -108,32 +108,92 @@
     
 
     <!-- Orderd List -->
-    
-    
-      
-    
-
-
-
-
-  
-  
+    <section id="order">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center pt-2">Order Pizza</h1>
+                </div>
+                <div class="col-md-6 text-light">
+                    <form>
+                        <div class="form-group">
+                            <label for="flavour">Select Pizza Flavour</label>
+                            <select class="form-control" id="flavour" required>
+                                <option value="">Select your flavour</option>
+                                <option value="chickentikka">Chicken Tikka</option>
+                                <option value="hawaiian">Hawaiian</option>
+                                <option value="mushroom">Chicken and Mushroom</option>
+                                <option value="regina">Regina Pizza</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="size">
+                            <label for="flavour">Select Size</label>
+                            <select class="form-control" required>
+                                <option value="">Select size</option>
+                                <option value="small">Small </option>
+                                <option value="medium">Medium </option>
+                                <option value="large">Large </option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="crust">
+                            <label for="flavour">Select Crust</label>
+                            <select class="form-control" required>
+                                <option value="">Choose your crust</option>
+                                <option value="crispy">Crispy @ Ksh. 100</option>
+                                <option value="stuffed">Stuffed @ Ksh. 150</option>
+                                <option value="gluten">Gluten-free @ sh. 180</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="flavour">Select Topping</label>
+                            <select class="form-control" id="topping" required>
+                                <option value="">Choose your Topping</option>
+                                <option value="tomato">Tomato @ sh. 80</option>
+                                <option value="onions">Onions @ sh. 80</option>
+                                <option value="mushroom">Mushroom @ sh. 80</option>
+                                <option value="greenpepper">Green Pepper @ sh. 80</option>
+                                <option value=""></option>
+                                <option value="beef">Beef Peperoni @ sh. 170</option>
+                                <option value="chicken">Periperi Chicken @ sh. 170</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Number of Pizza's</label>
+                            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                        </div>
+                        <button type="submit" id="checkout" class="btn btn-danger">Check Out</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
   <!-- Contact -->
-  <form action="">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" placeholder="Name">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <form >
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message"placeholder="Message here.."></textarea>
+              </div>
+              <div class="col-md-6">
+                <a href="#" class="btn btn-primary">Submit</a>
+              </div>
+          </form>
+  
+        </div>
     </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="text" class="form-control" placeholder="Email">
-    </div>
-    <div class="form-group">
-        <label for="name">Message</label>
-        <textarea class="form-control" name="message"placeholder="Message here.."></textarea>
-    </div>
-    <a href="#" class="btn btn-primary">Submit</a>
-</form>
+
+  </div>
+  
   
   
   
