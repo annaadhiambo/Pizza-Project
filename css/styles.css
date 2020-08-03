@@ -14,3 +14,7 @@
 .text-center{
     line-height: 5vh;
 }
+.img{
+    background: url(../images/pizza7.jpg) center/cover no-repeat;
+    height: 50%;
+}
