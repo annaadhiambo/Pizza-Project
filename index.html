@@ -8,20 +8,38 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="nav bg-dark">
+        <li class="nav-item">
+            <a href="#home" class="nav-link nav-link-custom">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link nav-link-custom">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#menu" class="nav-link nav-link-custom">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a href="#order" class="nav-link nav-link-custom">Order</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link nav-link-custom">Contact</a>
+        </li>
+    </nav>
     <!-- Showcase Area -->
         <div class="container-fluid" id="back-img">
           
-          <div class="container text-center">
+          <div class="container text-center text-yellow">
             <h1>WELCOME</h1>
             <h1>Get HOT PIZZA</h1>
-            <p>AMAZING ADHIS MAKES AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
+            <p text-green>AMAZING ADHIS MAKES AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
           </div>
         </div>
     </section>
 
     <!-- About Area -->
 
-    <div class="container text-center">
+    <div class="container text-center" id="about">
       <h2>ABOUT US</h2>
         <p>welcome to our pizza store, here we get to serve you the best.<br>
             This is a pizza store that caters for those who requires<br>
@@ -33,7 +51,7 @@
 
     <!-- What We Offer -->
     
-    <div class="container">
+    <div class="container" id="menu">
         <div class="row">
             <div class="col-md-12 text-center pt-3">
                 <h2>MENU</h2>
@@ -44,7 +62,7 @@
                         <img class="w-300 img-fluid" src="./images/pizza10.jpg" alt="">
                     </div>
                     <div class="card-footer">
-                        <a href="#order" class="btn btn-danger">Select Option</a>
+                        <a href="#order" class="btn btn-danger">order Option</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +72,7 @@
                         <img class="w-300 img-fluid" src="./images/pizza13.jpg" alt="">
                     </div>
                     <div class="card-footer">
-                        <a href="#order" class="btn btn-danger">Select Option</a>
+                        <a href="#order" class="btn btn-danger">Order Option</a>
                    </div>
                 </div>
             </div>
@@ -64,7 +82,7 @@
                         <img class="w-300 img-fluid" src="./images/pizza4.jpg" alt="">
                     </div>
                     <div class="card-footer">
-                        <a href="#order" class="btn btn-danger">Select Option</a>
+                        <a href="#order" class="btn btn-danger">Order Option</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +96,7 @@
                         <img class="w-300 img-fluid" src="./images/pizza12.jpg" alt="">
                     </div>
                     <div class="card-footer">
-                        <a href="#order" class="btn btn-danger">Select Option</a>
+                        <a href="#order" class="btn btn-danger">Order Option</a>
                     </div>
                 </div>
             </div>
@@ -88,7 +106,7 @@
                         <img class="w-300 img-fluid" src="./images/pizza2.jpg" alt="">
                     </div>
                     <div class="card-footer">
-                        <a href="#order" class="btn btn-danger">Select Option</a>
+                        <a href="#order" class="btn btn-danger">Order Option</a>
                    </div>
                 </div>
             </div>
@@ -98,7 +116,7 @@
                         <img class="w-300 img-fluid" src="./images/pizza9.jpg" alt="">
                     </div>
                     <div class="card-footer">
-                        <a href="#order" class="btn btn-danger">Select Option</a>
+                        <a href="#order" class="btn btn-danger">Order Option</a>
                     </div>
                 </div>
             </div>
@@ -121,18 +139,18 @@
                             <select class="form-control" id="flavour" required>
                                 <option value="select">Select pizza</option>
                                 <option value="Regina Pizza">Regina Pizza</option>
-                                <option value="hawaiian">Hawaiian</option>
-                                <option value="mushroom">Mushroom</option>
-                                <option value="chickentikka">Chicken Tikka</option>
+                                <option value="Hawaiian">Hawaiian</option>
+                                <option value="Mushroom">Mushroom</option>
+                                <option value="Chicken Tikka">Chicken Tikka</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="flavour">Select Size</label>
                             <select class="form-control" id="size" required>
                                 <option value="select">Select size</option>
-                                <option value="small">Small...sh 1000 </option>
-                                <option value="medium">Medium...sh 2500 </option>
-                                <option value="large">Large...sh 3460 </option>
+                                <option value="Small">Small...sh 1000 </option>
+                                <option value="Medium">Medium...sh 2500 </option>
+                                <option value="Large">Large...sh 3460 </option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -148,27 +166,32 @@
                             <label for="flavour">Select Topping</label>
                             <select class="form-control" id="topping" required>
                                 <option value="select">Select topping</option>
-                                <option value="tomato">Tomato sh.120</option>
-                                <option value="onions">Onions sh.40</option>
-                                <option value="mushroom">Mushroom sh.95</option>
-                                <option value="greenpepper">Green Pepper sh.50</option>
+                                <option value="Tomato">Tomato sh.120</option>
+                                <option value="Onions">Onions sh.40</option>
+                                <option value="Mushroom">Mushroom sh.95</option>
+                                <option value="Green Pepper">Green Pepper sh.50</option>
                                 <option value=""></option>
-                                <option value="beef">Beef Peperoni sh.125</option>
-                                <option value="chicken">Periperi Chicken sh.60</option>
+                                <option value="Beef Peperoni">Beef Peperoni sh.125</option>
+                                <option value="Periperi Chicken">Periperi Chicken sh.60</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="">Number of Pizza's</label>
                             <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
                         </div>
-                        <button type="submit" id="checkout" class="btn btn-danger">Check Out</button>
+                        <div class="submit pb-3">
+                            <button type="submit" id="checkout" class="btn btn-danger">Check Out</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
   <!-- Contact -->
-  <div class="container bg-warning pt-3">
+  <div class="container bg-warning pt-3" id="contact">
+      <div class="col-md-12 text-center">
+          <h1>Contact</h1>
+      </div>
     <div class="row">
         <div class="col-md-6">
           <form id="work">
@@ -193,6 +216,11 @@
     </div>
 
   </div>
+  <footer>
+    <div class="copyright text-center">
+        <p>Copyright@2020 www.ann’pizza store.com</p>
+    </div>
+  </footer>
   
   
   

@@ -14,3 +14,14 @@
 .text-center{
     line-height: 5vh;
 }
+#navigation{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.nav-link-custom{
+    color: white;
+}
+.nav-link-custom:hover{
+    color: salmon;
+}
