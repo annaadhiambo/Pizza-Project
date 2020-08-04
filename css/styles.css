@@ -25,3 +25,13 @@
 .nav-link-custom:hover{
     color: salmon;
 }
+#back-image{
+    background-image:  url(../images/pizza5.jpg);
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    padding-top: 20%;
+    
+}
