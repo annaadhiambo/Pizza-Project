@@ -137,7 +137,6 @@
                         <div class="form-group">
                             <label for="flavour">Select Pizza</label>
                             <select class="form-control" id="flavour" required>
-                                <option value="select">Select pizza</option>
                                 <option value="Regina Pizza">Regina Pizza</option>
                                 <option value="Hawaiian">Hawaiian</option>
                                 <option value="Mushroom">Mushroom</option>
@@ -147,32 +146,29 @@
                         <div class="form-group">
                             <label for="flavour">Select Size</label>
                             <select class="form-control" id="size" required>
-                                <option value="select">Select size</option>
-                                <option value="Small">Small...sh 1000 </option>
-                                <option value="Medium">Medium...sh 2500 </option>
-                                <option value="Large">Large...sh 3460 </option>
+                                <option value="1">Small...sh 1000 </option>
+                                <option value="2">Medium...sh 2500 </option>
+                                <option value="3">Large...sh 3460 </option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="flavour">Select Crust</label>
                             <select class="form-control" id="crust" required>
-                                <option value="select">Select crust</option>
-                                <option value="crispy">Crispy sh.105</option>
-                                <option value="stuffed">Stuffed sh.134</option>
-                                <option value="gluten">Gluten-free sh.130</option>
+                                <option value="1">Crispy sh.105</option>
+                                <option value="2">Stuffed sh.134</option>
+                                <option value="3">Gluten-free sh.130</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="flavour">Select Topping</label>
                             <select class="form-control" id="topping" required>
-                                <option value="select">Select topping</option>
-                                <option value="Tomato">Tomato sh.120</option>
-                                <option value="Onions">Onions sh.40</option>
-                                <option value="Mushroom">Mushroom sh.95</option>
-                                <option value="Green Pepper">Green Pepper sh.50</option>
+                                <option value="1">Tomato sh.120</option>
+                                <option value="2">Onions sh.40</option>
+                                <option value="3">Mushroom sh.95</option>
+                                <option value="4">Green Pepper sh.50</option>
                                 <option value=""></option>
-                                <option value="Beef Peperoni">Beef Peperoni sh.125</option>
-                                <option value="Periperi Chicken">Periperi Chicken sh.60</option>
+                                <option value="5">Beef Peperoni sh.125</option>
+                                <option value="6">Periperi Chicken sh.60</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -180,9 +176,32 @@
                             <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
                         </div>
                         <div class="submit pb-3">
-                            <button type="submit" id="checkout" class="btn btn-danger">Check Out</button>
+                            <button type="submit" id="form" class="btn btn-danger">Check Out</button>
                         </div>
+
                     </form>
+                </div>
+                <div class="col-md-6 text-white">
+                    <div class="order-summary pt-3" id="sum-order">
+                        <h2 class="text-center" id="summary">Order Summary</h2>
+                        <ol id="list" class="text-center sum">
+                        </ol>
+                        <div class="order-button text-center">
+                            <form action="" class="form-group data" id="data">
+                                <div class="form-group">
+                                    <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+                                </div>
+                               <div class="form-group">
+                                <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
+                               </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
+                                </div>
+                            </form>
+                            <button class="btn btn-warning" id="delivery">Delivery</button>
+                            <button class="btn btn-warning" id="pick">Pick Up</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,6 +232,7 @@
           </form>
   
         </div>
+        
     </div>
 
   </div>
