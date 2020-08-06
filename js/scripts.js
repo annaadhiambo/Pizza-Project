@@ -86,5 +86,35 @@ $(document).ready(function(){
     });
 
 }); 
+$(function(){
+    $("#delivery").click(function(){
+        // $("#data").show();
+
+        let inputedName = $("#name").val();
+        let inputedPhone = $("#phone").val();
+        let inputedLocation = $("#location").val();
+        alert(inputedName + " " + "We have recieved your order and the delivery wil be made at " + inputedLocation)
+    });
+
+    $("#pick").click(function(){
+        alert("Thank you for choosing Us")
+    })
+    
+
+});
+$(document).ready(function(){
+    $('form#validity').submit(function(){
+        var name = $('input#name').val();
+        var email = $('input#email').val();
+        var message = $('input#textarea').val();
+        if (name && email){
+            alert (name + ', we have recived your message. Thank you for contacting us ');
+        }else {
+            alert('Please enter your name and email');
+        }
+    });
+});
+
+
 
 
