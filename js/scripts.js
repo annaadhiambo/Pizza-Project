@@ -46,8 +46,6 @@ $(document).ready(function(){
         alert(topping);
         var number =parseInt($("input#number").val());
         alert(number);
-        var delivery = $("#delivery").val();
-        alert(delivery);
 
         var pizzasize = pizzasize[size-1]
         var pizzacrust = pizzacrust[crust-1]
@@ -65,23 +63,15 @@ $(document).ready(function(){
 
         newTotal = new Total(pizaaprice,crustpizaa,toppizaa,number)
         
-
     
-    
-        
-        
-      
-        if(delivery ==="1"){
-           alert("Your order is" + newpizzaorder.fullorder())
-           console.log(newpizzaorder.fullorder())
+        if(number ){
+           alert("Your order is" + newTotal.totalprice())
+           console.log(newTotal.totalprice())
         }
-
-        // else if(delivery==="deliver" && number>0){
-        //     prompt("enter your location")
-        //     prompt("Your phone number")
-        //     alert("Your total price for the pizza is" + (newTotal.totalprice()) + "and your price for  delivery is ksh.500 ")
-
-        // }
+        if(number){
+            alert("Your pizza order" + newpizzaorder.fullorder())
+            console.log(newpizzaorder.fullorder())
+        }
 
     });
 
@@ -102,19 +92,3 @@ $(function(){
     
 
 });
-$(document).ready(function(){
-    $('form#validity').submit(function(){
-        var name = $('input#name').val();
-        var email = $('input#email').val();
-        var message = $('input#textarea').val();
-        if (name && email){
-            alert (name + ', we have recived your message. Thank you for contacting us ');
-        }else {
-            alert('Please enter your name and email');
-        }
-    });
-});
-
-
-
-
